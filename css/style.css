@@ -17,9 +17,14 @@ main {
     text-align: center;
 }
 
+.current {
+    color: rgba(117, 170, 255, 1);
+}
+
 .prof-pic {
     border: 3px solid  rgb(43, 43, 79);
     border-radius: 100px;
+    margin: 40px;
 }
 
 h1 {
