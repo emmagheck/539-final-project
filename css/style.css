@@ -1,0 +1,75 @@
+body {
+    background-color: #cdc3f4;
+}
+
+h1 {
+    font-family: 'Henny Penny';
+    color: rgb(36, 35, 111);
+    font-size: xx-large;
+    text-align: center;
+    font-weight: bolder;
+}
+
+h2 {
+    font-size: x-large;
+    text-align: center;
+    font-family: 'Henny Penny';
+    color: rgb(152, 42, 113);
+    font-weight: bold;
+}
+
+/* li {
+    list-style-type: "\1F3A7";
+} */
+
+nav {
+    background-color:  rgb(43, 43, 79);
+}
+a {
+    font-family: 'Henny Penny';
+    color: #cdc3f4;
+    font-weight: bolder;
+    font-size: large;
+}
+
+
+p.index {
+    color: rgb(36, 35, 111);
+    font-weight: bolder;
+    text-align: center;
+    border: 4px rgb(152, 42, 113);
+    border-style: ridge;
+    margin: 0px 50px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+}
+
+#nav_link::before {
+    content: '\1F3A7'
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex_item {
+    /* margin: 0 auto;
+    justify-items: center; */
+    margin: 5px;
+    padding: 5px;
+}
+
+.flex_pods {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pod_item {
+    margin: 5px;
+    padding: 5px;
+}
