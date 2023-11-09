@@ -1,5 +1,14 @@
 body {
-    background-color: #cdc3f4;
+    /* background-color: #cdc3f4; */
+    background-image: linear-gradient(to right, rgba(205, 195, 244, 1) , rgba(117, 170, 255, 1))
+}
+
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    top: 0;
 }
 
 h1 {
@@ -60,6 +69,8 @@ p.index {
     justify-items: center; */
     margin: 5px;
     padding: 5px;
+    border: 5px solid rgb(36, 35, 111);
+    border-radius: 20px;
 }
 
 .flex_pods {
@@ -72,4 +83,6 @@ p.index {
 .pod_item {
     margin: 5px;
     padding: 5px;
+    border: 5px solid rgb(36, 35, 111);
+    border-radius: 20px;
 }
