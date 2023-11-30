@@ -27,20 +27,26 @@ main {
     margin: 40px;
 }
 
+.headphones {
+    font-size: x-large;
+}
+
 h1 {
-    font-family: 'Henny Penny';
+    font-family: 'Patua One';
     color: rgb(36, 35, 111);
     font-size: xx-large;
     text-align: center;
     font-weight: bolder;
+    text-shadow: 2px 2px lightblue
 }
 
 h2 {
     font-size: x-large;
     text-align: center;
-    font-family: 'Henny Penny';
+    font-family: 'Patua One';
     color: rgb(152, 42, 113);
     font-weight: bold;
+    text-shadow: 2px 2px lightblue;
 }
 
 /* li {
@@ -58,22 +64,24 @@ ul {
 }
 
 a {
-    font-family: 'Henny Penny';
+    font-family: 'Patua One';
     color: #cdc3f4;
     font-weight: bolder;
     font-size: large;
 }
 
-
-p.index {
+#text {
+    position: absolute;
     color: rgb(36, 35, 111);
-    font-weight: bolder;
     text-align: center;
-    border: 4px rgb(152, 42, 113);
-    border-style: ridge;
+    border-radius: 5px;
+    border: 2px rgb(152, 42, 113);
+    background-color: #e7defa;
+    border-style: outset;
     margin: 0px 50px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-large;
+    font-style: oblique;
 }
 
 /* Add headphones emoji before list items in nav */
@@ -162,8 +170,7 @@ p.index {
   
   /* Style the back side */
   .flip-box-back {
-    /* background-color: rgb(36, 35, 111); */
-    background-color:  rgb(43, 43, 79);;
+    background-color:rgba(117, 170, 255, 1);
     color: white;
     transform: rotateY(180deg);
   }
@@ -176,13 +183,15 @@ p.index {
   }
 
   .album-name, .pod-name {
-    color:rgba(117, 170, 255, 1)
+    color:rgb(43, 43, 79);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    text-shadow: none;
   }
 
   .artist-name, .host-name, .album-year, .album-genre, .fav-song, .album-lang, .pod-genre {
-    color:rgba(117, 170, 255, 1);
-    font-family: 'Patua One';
-    font-weight: bold;
+    color:  rgb(43, 43, 79);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: larger;
     text-align: left;
   }
