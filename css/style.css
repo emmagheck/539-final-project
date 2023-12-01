@@ -1,6 +1,5 @@
 /* Add gradient background */
 body {
-    /* background-color: #cdc3f4; */
     background-image: linear-gradient(to right, rgba(205, 195, 244, 1) , rgba(117, 170, 255, 1))
 }
 
@@ -23,7 +22,7 @@ main {
 
 .prof-pic {
     border: 3px solid  rgb(43, 43, 79);
-    border-radius: 100px;
+    border-radius: 80px;
     margin: 40px;
 }
 
@@ -33,11 +32,11 @@ main {
 
 h1 {
     font-family: 'Patua One';
-    color: rgb(36, 35, 111);
+    color: rgb(43, 43, 79);
     font-size: xx-large;
     text-align: center;
     font-weight: bolder;
-    text-shadow: 2px 2px lightblue
+    text-shadow: 2px 2px rgb(225, 240, 245);
 }
 
 h2 {
@@ -46,12 +45,9 @@ h2 {
     font-family: 'Patua One';
     color: rgb(152, 42, 113);
     font-weight: bold;
-    text-shadow: 2px 2px lightblue;
+    text-shadow: 2px 2px rgb(225, 240, 245);
 }
 
-/* li {
-    list-style-type: "\1F3A7";
-} */
 
 nav {
     background-color:  rgb(43, 43, 79);
@@ -71,17 +67,14 @@ a {
 }
 
 #text {
-    position: absolute;
-    color: rgb(36, 35, 111);
+    color: rgb(43, 43, 79);
     text-align: center;
     border-radius: 5px;
-    border: 2px rgb(152, 42, 113);
+    border: 2px outset rgb(152, 42, 113);
     background-color: #e7defa;
-    border-style: outset;
     margin: 0px 50px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: x-large;
-    font-style: oblique;
 }
 
 /* Add headphones emoji before list items in nav */
@@ -97,8 +90,6 @@ a {
 }
 
 .flex_item {
-    /* margin: 0 auto;
-    justify-items: center; */
     margin: 5px;
     padding: 5px;
     border: 5px solid rgb(36, 35, 111);
@@ -129,13 +120,12 @@ a {
 
 
 
-
 .flip-box {
     background-color: transparent;
     width: 400px;
     height: 400px;
     border: 5px solid rgb(36, 35, 111);
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    perspective: 1000px;
   }
   
   /* This container is needed to position the front and back side */
@@ -148,7 +138,7 @@ a {
     transform-style: preserve-3d;
   }
   
-  /* Do an horizontal flip when you move the mouse over the flip box container */
+  /* horizontal flip when you move the mouse over the flip box container */
   .flip-box:hover .flip-box-inner {
     transform: rotateY(180deg);
   }
@@ -162,20 +152,20 @@ a {
     backface-visibility: hidden;
   }
   
-  /* Style the front side (fallback if image is missing) */
+  /* Style front side */
   .flip-box-front {
     background-color: #bbb;
     color: black;
   }
   
-  /* Style the back side */
+  /* Style back side */
   .flip-box-back {
     background-color:rgba(117, 170, 255, 1);
     color: white;
     transform: rotateY(180deg);
   }
 
-  .flex-test, .pod-gallery {
+  .flex-albums, .pod-gallery {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -186,12 +176,37 @@ a {
     color:rgb(43, 43, 79);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
-    text-shadow: none;
+    text-shadow: 2px 2px rgb(225, 240, 245);
   }
 
-  .artist-name, .host-name, .album-year, .album-genre, .fav-song, .album-lang, .pod-genre {
+  .artist-name, .host-name, .album-year, .album-genre, .fav-song, .album-lang, .pod-genre, .synopsis, .rating {
     color:  rgb(43, 43, 79);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: larger;
     text-align: left;
   }
+
+
+  
+  footer {
+    color:rgb(43, 43, 79);
+    font-weight: bold;
+  }
+
+
+
+/* @media screen and (min-width: 800px) {
+    #welcome {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    #about {
+        grid-column: 1 / span 1;
+    }
+
+    #text {
+        grid-column: 2 / span 1;
+    }
+} */
