@@ -1,6 +1,9 @@
 /* Add gradient background */
 body {
-    background-image: linear-gradient(to right, rgba(205, 195, 244, 1) , rgba(117, 170, 255, 1))
+    min-height: 100vh;
+    background-image: linear-gradient(to right, rgba(205, 195, 244, 1) , rgba(117, 170, 255, 1));
+    display: flex;
+    flex-direction: column;
 }
 
 /* Create header that stays at top of page as you scroll */
@@ -188,12 +191,17 @@ a {
 
 
   
-  /* footer {
-    color:rgb(43, 43, 79);
-    font-weight: bold;
-  } */
+  footer{
+    background-color: rgb(43, 43, 79);
+    color: #cdc3f4;
+    text-align: center;
+    padding-top: 30px;
+    margin-top: auto;
+  }
 
-
+  .footer {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
 
 @media screen and (min-width: 800px) {
     a {
@@ -213,7 +221,7 @@ a {
     #welcome {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-    } 
+    }
 
     #about {
         grid-column: 2 / span 2;
@@ -223,5 +231,11 @@ a {
         grid-column: 1 / span 1;
     }
 
-    
+    footer {
+        background-color: rgb(43, 43, 79);
+        color: #cdc3f4;
+        text-align: center;
+        padding-top: 30px;
+        margin-top: auto;
+      }
 }
