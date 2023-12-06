@@ -63,7 +63,7 @@ a {
     font-family: 'Patua One';
     color: #cdc3f4;
     font-weight: bolder;
-    font-size: large;
+    font-size: 22px;
 }
 
 #text {
@@ -127,8 +127,8 @@ a {
     border: 5px solid rgb(36, 35, 111);
     perspective: 1000px;
   }
-  
-  /* This container is needed to position the front and back side */
+
+  /* container to position front and back side */
   .flip-box-inner {
     position: relative;
     width: 100%;
@@ -137,12 +137,12 @@ a {
     transition: transform 0.8s;
     transform-style: preserve-3d;
   }
-  
-  /* horizontal flip when you move the mouse over the flip box container */
+
+  /* horizontal flip when you hover over the flip box container */
   .flip-box:hover .flip-box-inner {
     transform: rotateY(180deg);
   }
-  
+
   /* Position the front and back side */
   .flip-box-front, .flip-box-back {
     position: absolute;
@@ -195,18 +195,31 @@ a {
 
 
 
-/* @media screen and (min-width: 800px) {
+@media screen and (min-width: 800px) {
+    a {
+        font-family: 'Patua One';
+        color: #cdc3f4;
+        font-weight: bolder;
+        font-size: 30px;
+    }
+
+    .prof-pic {
+        position: relative;
+        top: 0;
+        left: 0;
+        width:max-content
+    }
+
     #welcome {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-    }
+        grid-template-columns: 1fr 1fr 1fr;
+    } 
 
     #about {
-        grid-column: 1 / span 1;
+        grid-column: 2 / span 2;
     }
 
-    #text {
-        grid-column: 2 / span 1;
+    #photo {
+        grid-column: 1 / span 1;
     }
-} */
+}
