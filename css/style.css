@@ -23,7 +23,7 @@ main {
 .prof-pic {
     border: 3px solid  rgb(43, 43, 79);
     border-radius: 80px;
-    margin: 40px;
+    margin: 60px;
 }
 
 .headphones {
@@ -188,10 +188,10 @@ a {
 
 
   
-  footer {
+  /* footer {
     color:rgb(43, 43, 79);
     font-weight: bold;
-  }
+  } */
 
 
 
@@ -222,4 +222,6 @@ a {
     #photo {
         grid-column: 1 / span 1;
     }
+
+    
 }
