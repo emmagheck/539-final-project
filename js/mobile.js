@@ -7,13 +7,15 @@
 //     });
 //   });
 
-document.addEventListener("DOMContentLoaded", function () {
-    var flipBoxes = document.querySelectorAll(".flip-box");
 
-    flipBoxes.forEach(function (flipBox) {
-      flipBox.addEventListener("click", function () {
 
-        flipBox.classList.toggle("flipped");
-      });
-    });
-  });
+// document.addEventListener("DOMContentLoaded", function () {
+//     var flipBoxes = document.querySelectorAll(".flip-box");
+
+//     flipBoxes.forEach(function (flipBox) {
+//       flipBox.addEventListener("click", function () {
+
+//         flipBox.classList.toggle("flipped");
+//       });
+//     });
+//   });
